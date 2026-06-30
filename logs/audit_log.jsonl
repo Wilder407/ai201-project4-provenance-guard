@@ -1,0 +1,6 @@
+{"event": "classification", "content_id": "f8ee6714", "lexical_score": 0.75, "llm_score": 0.8, "timestamp": "2026-06-30T12:03:35.679376+00:00"}
+{"event": "appeal_submitted", "content_id": "f8ee6714", "creator_id": "user_test_appeal", "original_attribution": "ai_generated", "original_confidence": 0.6, "appeal_reasoning_length": 140, "timestamp": "2026-06-30T12:03:36.412897+00:00"}
+{"event": "classification", "content_id": "ee199f63", "lexical_score": 0.396, "llm_score": 0.2, "timestamp": "2026-06-30T12:13:29.204055+00:00"}
+{"event": "classification", "content_id": "d9299e36", "lexical_score": 0.58, "llm_score": 0.8, "timestamp": "2026-06-30T12:13:29.922948+00:00"}
+{"event": "classification", "content_id": "7f7db0d9", "lexical_score": 0.627, "llm_score": 0.2, "timestamp": "2026-06-30T12:13:30.636306+00:00"}
+{"event": "appeal_submitted", "content_id": "d9299e36", "creator_id": "user_anonymous_7", "original_attribution": "uncertain", "original_confidence": 0.673, "appeal_reasoning_length": 258, "timestamp": "2026-06-30T12:13:31.327343+00:00"}
