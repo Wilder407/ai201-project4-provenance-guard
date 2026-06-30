@@ -1,0 +1,28 @@
+======================================================================
+M4 -- Full Pipeline Test (lexical + LLM + combine)
+======================================================================
+
+maya_angelou_excerpt:
+   lexical score : 0.605
+   llm score     : 0.1
+   llm reasoning : The writing exhibits a strong, authentic voice and emotional intensity, with a distinctive, idiomatic style that is less common in AI-generated text. The use of metaphor and rhetorical questions also suggests a human touch. The language is vivid and expressive, with a clear, personal tone that is harder for AI to replicate.
+   ATTRIBUTION   : human_written
+   CONFIDENCE    : 0.723
+
+chatgpt_generated:
+   lexical score : 0.75
+   llm score     : 0.8
+   llm reasoning : The text exhibits a high degree of stylistic consistency, structural predictability, and formal vocabulary choices, which are characteristic of AI-generated content. The language is polished and lacks idiosyncratic errors or unexpected turns, suggesting a lack of human irregularity. The emotional authenticity of the text also seems simulated, with phrases like 'fast-paced world' and 'long-term success and fulfillment' feeling like clichéd expressions.
+   ATTRIBUTION   : ai_generated
+   CONFIDENCE    : 0.782
+
+my_edge_case_uniform:
+   lexical score : 0.778
+   llm score     : 0.95
+   llm reasoning : The text exhibits a high degree of stylistic consistency and structural predictability, with a repetitive and formulaic sentence structure that is typical of AI-generated content. The vocabulary choices are also formal and lacking in nuance, which is another characteristic of AI-generated writing. The text lacks any discernible emotional authenticity or idiosyncratic features that would suggest human origin.
+   ATTRIBUTION   : ai_generated
+   CONFIDENCE    : 0.89
+
+----------------------------------------------------------------------
+Key question: did 'my_edge_case_uniform' land in 'uncertain',
+or did both signals agree it's AI (a false positive on human work)?

@@ -1,0 +1,36 @@
+============================================================
+M3 — Lexical Signal Direct Test
+============================================================
+
+maya_angelou_excerpt:
+   score: 0.605
+   ttr: 0.769
+   sentence_length_std_dev: 4.13
+   special_punct_ratio: 0.0
+   hedge_ratio: 0.038
+
+chatgpt_generated:
+   score: 0.75
+   ttr: 0.855
+   sentence_length_std_dev: 2.68
+   special_punct_ratio: 0.0
+   hedge_ratio: 0.0
+
+my_edge_case_uniform:
+   score: 0.778
+   ttr: 0.667
+   sentence_length_std_dev: 0.53
+   special_punct_ratio: 0.0
+   hedge_ratio: 0.0
+
+------------------------------------------------------------
+Sanity checks:
+  All scores in [0,1]: True
+  Angelou (human) score : 0.605
+  ChatGPT (AI) score    : 0.75
+  Edge case score       : 0.778
+
+Note: my_edge_case_uniform was written with deliberately uniform
+sentence length to test whether the heuristic alone (no LLM signal
+yet) over-flags disciplined-but-human writing as AI — this is the
+documented blind spot from planning.md, expect a HIGHER score here.
